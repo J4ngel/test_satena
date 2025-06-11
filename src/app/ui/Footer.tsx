@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function Footer (){
@@ -8,7 +9,7 @@ export default function Footer (){
 
         <div>
           <h4>Ubicación</h4>
-          <p>304000000000</p>
+          <p>Madrid, Cundinamarca, centro</p>
         </div>
 
         <div>
@@ -28,26 +29,26 @@ export default function Footer (){
 
         <div>
           <h4>LinkedIn</h4>
-          <p>test@user.com</p>
+          <Link href={"https://www.linkedin.com/in/jaime-andres-angel-melgarejo-62a53420a/"}>Jaime Andrés Ángel</Link>
         </div>
         
         <div>
           <h4>Repositorio del proyecto</h4>
-          <p>test@user.com</p>
+          <Link href={"https://github.com/J4ngel/test_satena"}>test_satena</Link>
         </div>
 
         <div>
           <h4>Perfil de Github</h4>
-          <p>test@user.com</p>
+          <Link href={"https://github.com/J4ngel"}>J4ngel</Link>
         </div>
       </section>
 
     <section className="space-y-4">
       <h3 className="font-bold">Links de interés</h3>
 
-      <p>Glosario</p>
+      <Link href={"/Glosario"}>Glosario</Link>
       
-      <p>políticas de privacidad</p>
+      <Link href={"/politicas_de_privacidad"}>políticas de privacidad</Link>
     </section>
     <p className="mt-4 col-span-3 text-center text-sm text-gray-500">© {2025} made with ❤️ by Jaime Angel</p>
   </footer> 
