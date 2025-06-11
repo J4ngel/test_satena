@@ -15,7 +15,7 @@ export default function Home() {
 
           <Image
             src={'/next.svg'}
-            className="ml-4"
+            className="mt-4 md:mt-0 mx-auto md:ml-4"
             alt="Company logo"
             width={250}
             height={150}
@@ -61,7 +61,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus ex eveniet fugiat. Qui magnam iure distinctio rerum. Eligendi vitae quisquam quod eveniet commodi assumenda, obcaecati provident voluptas. Exercitationem, consectetur!
           </p>
 
-          <div className="flex flex-col-reverse md:flex-row gap-0 md:gap-8">
+          <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-8">
             <Review 
             name={"Test"} 
             qualification={5} 
@@ -69,18 +69,21 @@ export default function Home() {
             description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore qui autem neque corporis exercitationem ratione ad id placeat quisquam voluptatem dicta nisi, perspiciatis, delectus officiis esse. Delectus, debitis repellendus!"}/>
 
             <Image 
+              className="mx-auto"
               src={"/unknown_landscape.svg"} 
               alt={"Landscape image"}
               width={200}
               height={200}/>
           </div>
           
-          <div className="flex flex-col md:flex-row gap-0 md:gap-8">
-            <Image 
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+            <Image
+              className="mx-auto"
               src={"/unknown_landscape.svg"} 
               alt={"Landscape image"}
               width={200}
-              height={200}/>
+              height={200}
+              />
 
             <Review 
             name={"Test 2"} 
